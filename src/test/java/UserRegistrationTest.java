@@ -79,7 +79,11 @@ UC2_TestLastName
         boolean result = userRegistration.mobileNumber("7000598464");
         Assert.assertEquals(false, result);
     }
+ UC6_TestPasswordRule2
+
+
  UC5_TestPasswordRule1
+ master
     @Test
     public void givenPassword_WhenValid_ShouldReturnTrue() {
         boolean result = userRegistration.password("imashvini");
@@ -91,11 +95,27 @@ UC2_TestLastName
         boolean result = userRegistration.password("as");
         Assert.assertEquals(false, result);
     }
+ UC6_TestPasswordRule2
+
+    @Test
+    public void givenPasswordRule2_WhenValid_ShouldReturnTrue() {
+        boolean result = userRegistration.password2("imasHHvini");
+        Assert.assertEquals(true, result);
+    }
+
+    @Test
+    public void givenPasswordRule2_WhenInvalid_ShouldReturnFalse() {
+        boolean result = userRegistration.password2("ashvinni");
+        Assert.assertEquals(false, result);
+    }
 }
 
 }
 
 }
+
+}
+ master
  master
  master
  master
