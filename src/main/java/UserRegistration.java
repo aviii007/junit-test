@@ -40,6 +40,9 @@ public class UserRegistration {
         Matcher matcher = pattern.matcher(lastName);
         return matcher.matches();
     }
+  UC2_TestLastName
+}
+
 
     /*
      * @purpose: As a User need to enter a valid email E.g. abc.xyz@bl.co.in - Email
@@ -58,6 +61,7 @@ public class UserRegistration {
         Matcher matcher = pattern.matcher(email);
         return matcher.matches();
     }
+ UC4_TestMobileNumber
 
     /*
      * @purpose: As a User need to follow pre defined Mobile Format - E.g. 91
@@ -75,7 +79,10 @@ public class UserRegistration {
         Matcher matcher = pattern.matcher(mobileNumber);
         return matcher.matches();
     }
+ UC6_TestPasswordRule2
 
+ UC5_TestPasswordRule1
+ master
     /*
      * @purpose: As a User need to follow pre-defined Password rules. RULE1 –
      * minimum 8 Characters - NOTE – All rules must be passed
@@ -92,6 +99,7 @@ public class UserRegistration {
         Matcher matcher = pattern.matcher(password);
         return matcher.matches();
     }
+ UC6_TestPasswordRule2
 
     /*
      * @purpose: As a User need to follow pre-defined Password rules. RULE1 –
@@ -109,6 +117,7 @@ public class UserRegistration {
         Matcher matcher = pattern.matcher(password);
         return matcher.matches();
     }
+ UC7_TestPasswordRule3
 
     /*
      * @purpose: As a User need to follow pre-defined Password rules. RULE1 –
@@ -127,6 +136,7 @@ public class UserRegistration {
         Matcher matcher = pattern.matcher(password);
         return matcher.matches();
     }
+ UC8_TestPasswordRule4
 
     /*
      * @purpose: As a User need to follow pre-defined Password rules. Rule4 – Has
@@ -145,3 +155,27 @@ public class UserRegistration {
         return matcher.matches();
     }
 }
+
+}
+
+}
+
+}
+ 
+
+
+
+
+
+
+
+
+
+}
+
+}
+ master
+ master
+ master
+ master
+ master
