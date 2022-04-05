@@ -38,6 +38,9 @@ public class UserRegistration {
         Matcher matcher = pattern.matcher(lastName);
         return matcher.matches();
     }
+  UC2_TestLastName
+}
+=======
 
     /*
      * @purpose: As a User need to enter a valid email E.g. abc.xyz@bl.co.in - Email
