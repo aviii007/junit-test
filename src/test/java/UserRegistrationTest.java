@@ -6,13 +6,13 @@ public class UserRegistrationTest {
 
     @Test
     public void givenFirstName_WhenValid_ShouldReturnTrue() {
-        boolean result = userRegistration.firstName("Rutuja");
+        boolean result = userRegistration.firstName("Ashvini");
         Assert.assertEquals(true, result);
     }
 
     @Test
     public void givenFirstName_WhenInvalid_ShouldReturnFalse() {
-        boolean result = userRegistration.firstName("rutuja");
+        boolean result = userRegistration.firstName("kanojia");
         Assert.assertEquals(false, result);
     }
 }
