@@ -32,7 +32,7 @@ UC2_TestLastName
  UC2_TestLastName
         boolean result = userRegistration.lastName("Kanojia");
 
-        boolean result = userRegistration.lastName("Nandiwadekar");
+        boolean result = userRegistration.lastName("Kanojia");
  master
  master
         Assert.assertEquals(true, result);
