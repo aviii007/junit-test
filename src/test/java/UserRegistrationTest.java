@@ -6,25 +6,37 @@ public class UserRegistrationTest {
 
     @Test
     public void givenFirstName_WhenValid_ShouldReturnTrue() {
-        boolean result = userRegistration.firstName("Ashvini");
+        boolean result = userRegistration.firstName("Rutuja");
         Assert.assertEquals(true, result);
     }
 
     @Test
     public void givenFirstName_WhenInvalid_ShouldReturnFalse() {
-        boolean result = userRegistration.firstName("ashvini");
+        boolean result = userRegistration.firstName("rutuja");
         Assert.assertEquals(false, result);
     }
 
     @Test
     public void givenLastName_WhenValid_ShouldReturnTrue() {
-        boolean result = userRegistration.lastName("Kanojia");
+        boolean result = userRegistration.lastName("Nandiwadekar");
         Assert.assertEquals(true, result);
     }
 
     @Test
     public void givenLastName_WhenInvalid_ShouldReturnFalse() {
-        boolean result = userRegistration.lastName("kanojia");
+        boolean result = userRegistration.lastName("patil");
+        Assert.assertEquals(false, result);
+    }
+
+    @Test
+    public void givenEmail_WhenValid_ShouldReturnTrue() {
+        boolean result = userRegistration.email("abc.xyz@bl.co.in");
+        Assert.assertEquals(true, result);
+    }
+
+    @Test
+    public void givenEmail_WhenInvalid_ShouldReturnFalse() {
+        boolean result = userRegistration.email("abc.xyz.in");
         Assert.assertEquals(false, result);
     }
 
