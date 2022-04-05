@@ -39,5 +39,4 @@ public class UserRegistrationTest {
         boolean result = userRegistration.email("abc.xyz.in");
         Assert.assertEquals(false, result);
     }
-
 }
