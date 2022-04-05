@@ -121,6 +121,19 @@ UC2_TestLastName
         boolean result = userRegistration.password3("asaetref");
         Assert.assertEquals(false, result);
     }
+ UC8_TestPasswordRule4
+
+    @Test
+    public void givenPasswordRule4_WhenValid_ShouldReturnTrue() {
+        boolean result = userRegistration.password4("ashvini@26");
+        Assert.assertEquals(true, result);
+    }
+
+    @Test
+    public void givenPasswordRule4_WhenInvalid_ShouldReturnFalse() {
+        boolean result = userRegistration.password3("as11");
+        Assert.assertEquals(false, result);
+    }
 }
 
 }
@@ -130,6 +143,9 @@ UC2_TestLastName
 }
 
 }
+
+}
+ master
  master
  master
  master

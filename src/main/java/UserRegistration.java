@@ -136,6 +136,26 @@ public class UserRegistration {
         Matcher matcher = pattern.matcher(password);
         return matcher.matches();
     }
+ UC8_TestPasswordRule4
+
+    /*
+     * @purpose: As a User need to follow pre-defined Password rules. Rule4 – Has
+     * exactly 1 Special Character
+     *
+     * @param: password
+     *
+     * @function: To check password is Valid or not
+     *
+     * @returns true or false
+     */
+    public boolean password4(String password) {
+        regex = "^[0-9a-zA-Z!,@#$&*().]{8,}$";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(password);
+        return matcher.matches();
+    }
+}
+
 }
 
 }
@@ -154,6 +174,7 @@ public class UserRegistration {
 }
 
 }
+ master
  master
  master
  master
