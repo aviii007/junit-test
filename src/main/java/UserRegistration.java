@@ -40,6 +40,9 @@ public class UserRegistration {
         Matcher matcher = pattern.matcher(lastName);
         return matcher.matches();
     }
+  UC2_TestLastName
+}
+=======
 
     /*
      * @purpose: As a User need to enter a valid email E.g. abc.xyz@bl.co.in - Email
@@ -58,6 +61,7 @@ public class UserRegistration {
         Matcher matcher = pattern.matcher(email);
         return matcher.matches();
     }
+ UC4_TestMobileNumber
 
     /*
      * @purpose: As a User need to follow pre defined Mobile Format - E.g. 91
@@ -76,3 +80,6 @@ public class UserRegistration {
         return matcher.matches();
     }
 }
+
+}
+ master
