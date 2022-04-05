@@ -28,4 +28,11 @@ public class EmailIdTest {
                 {"abc.@gmail.com", false}, {"abc@abc@gmail.com", false}, {"abc@gmail.com.1a", false},
                 {"abc@gmail.com.aa.au", false}});
     }
+
+    @Test
+    public void givenEmailIds_WhenProper_ShouldReturnExpectedResult() {
+        EmailIds obj = new EmailIds();
+        boolean result = obj.emailIdValidator(emailIds);
+        Assert.assertEquals(expectedResult, result);
+    }
 }
