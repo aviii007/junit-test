@@ -12,7 +12,11 @@ public class UserRegistrationTest {
 
     @Test
     public void givenFirstName_WhenInvalid_ShouldReturnFalse() {
+UC2_TestLastName
         boolean result = userRegistration.firstName("ashvini");
+      
+        boolean result = userRegistration.firstName("kanojia");
+      master
         Assert.assertEquals(false, result);
     }
 
