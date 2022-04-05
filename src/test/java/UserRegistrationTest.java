@@ -6,25 +6,25 @@ public class UserRegistrationTest {
 
     @Test
     public void givenFirstName_WhenValid_ShouldReturnTrue() {
-        boolean result = userRegistration.firstName("Rutuja");
+        boolean result = userRegistration.firstName("Ashvini");
         Assert.assertEquals(true, result);
     }
 
     @Test
     public void givenFirstName_WhenInvalid_ShouldReturnFalse() {
-        boolean result = userRegistration.firstName("rutuja");
+        boolean result = userRegistration.firstName("ashvini");
         Assert.assertEquals(false, result);
     }
 
     @Test
     public void givenLastName_WhenValid_ShouldReturnTrue() {
-        boolean result = userRegistration.lastName("Nandiwadekar");
+        boolean result = userRegistration.lastName("Kanojia");
         Assert.assertEquals(true, result);
     }
 
     @Test
     public void givenLastName_WhenInvalid_ShouldReturnFalse() {
-        boolean result = userRegistration.lastName("patil");
+        boolean result = userRegistration.lastName("kanojia");
         Assert.assertEquals(false, result);
     }
 
@@ -40,4 +40,15 @@ public class UserRegistrationTest {
         Assert.assertEquals(false, result);
     }
 
+    @Test
+    public void givenMobileNumber_WhenValid_ShouldReturnTrue() {
+        boolean result = userRegistration.mobileNumber("91 700059464");
+        Assert.assertEquals(true, result);
+    }
+
+    @Test
+    public void givenMobileNumber_WhenInvalid_ShouldReturnFalse() {
+        boolean result = userRegistration.mobileNumber("7000598464");
+        Assert.assertEquals(false, result);
+    }
 }
