@@ -42,7 +42,7 @@ public class UserRegistration {
     }
   UC2_TestLastName
 }
-=======
+
 
     /*
      * @purpose: As a User need to enter a valid email E.g. abc.xyz@bl.co.in - Email
@@ -79,7 +79,36 @@ public class UserRegistration {
         Matcher matcher = pattern.matcher(mobileNumber);
         return matcher.matches();
     }
+ UC5_TestPasswordRule1
+    /*
+     * @purpose: As a User need to follow pre-defined Password rules. RULE1 –
+     * minimum 8 Characters - NOTE – All rules must be passed
+     *
+     * @param: password
+     *
+     * @function: To check password is Valid or not
+     *
+     * @returns true or false
+     */
+    public boolean password(String password) {
+        regex = "^[a-z]{8,}$";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(password);
+        return matcher.matches();
+    }
+}
+ 
+
+
+
+
+
+
+
+
+
 }
 
 }
+ master
  master
